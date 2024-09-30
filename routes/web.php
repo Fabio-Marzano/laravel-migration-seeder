@@ -15,7 +15,7 @@ use App\Http\Controllers\TrainController as TrainController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('homepage');
 
 Route::get('/trains', [TrainController::class, 'index'])->name('trains');

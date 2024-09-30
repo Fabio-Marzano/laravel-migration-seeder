@@ -9,6 +9,18 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
+                    <a href="{{ route('homepage') }}" class="btn btn-sm btn-primary">Home</a>
+                    <a href="{{ route('trains') }}" class="btn btn-sm btn-primary">Trains</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        @yield('content')
+    </main>
 </body>
 </html>
